@@ -1,98 +1,60 @@
-<!doctype html>
-<html lang="en-US">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Light Theme</title>
-<link href="file:///C|/Users/I-KA-Z/Documents/css/singlePageTemplate.css" rel="stylesheet" type="text/css">
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<!-- Main Container -->
-<div class="container"> 
-  <!-- Navigation -->
-  <header> <a href="">
-    <h4 class="logo">LIGHT</h4>
+---
+layout: page
+description: "中西融合, 即学即会, 从此不再辛苦背单词"
+---
+
+<!--
+<ul class="pager">
+  
+    <li class="next">
+        <a href="https://klovien.github.io/1-resources/" data-toggle="tooltip" data-placement="top" title="学习资料集">
+                        开始学习<br>
+        </a>
+    </li>           
+  
+    <li class="next">
+        <a href="https://klovien.github.io/2018/12/10/三叶语简介/" data-toggle="tooltip" data-placement="top" title="三叶语简介">
+                        了解更多<br>
+        </a>
+    </li>
+                    
+</ul>
+-->
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+        <div class="post-content-preview">
+            {{ post.content | strip_html | truncate:200 }}
+        </div>
     </a>
-    <nav>
-      <ul>
-        <li><a href="#hero">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li> <a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <h2 class="hero_header">HERO <span class="light">LIGHT</span></h2>
-    <p class="tagline">Light is a simple one page website</p>
-  </section>
-  <!-- About Section -->
-  <section class="about" id="about">
-    <h2 class="hidden">About</h2>
-    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-  </section>
-  <!-- Stats Gallery Section -->
-  <div class="gallery">
-    <div class="thumbnail">
-      <h1 class="stats">1500</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">2300</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">7500</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">9870</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-  </div>
-  <!-- Parallax Section -->
-  <section class="banner">
-    <h2 class="parallax">PARALLAX HERO</h2>
-    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-  </section>
-  <!-- More Info Section -->
-  <footer>
-    <article class="footer_column">
-      <h3>ABOUT</h3>
-      <img src="file:///C|/Users/I-KA-Z/Documents/images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
-    </article>
-    <article class="footer_column">
-      <h3>LOCATION</h3>
-      <img src="file:///C|/Users/I-KA-Z/Documents/images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
-    </article>
-  </footer>
-  <!-- Footer Section -->
-  <section class="footer_banner" id="contact">
-    <h2 class="hidden">Footer Banner Section </h2>
-    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
-    <div class="button">subscribe</div>
-  </section>
-  <!-- Copyrights Section -->
-  <div class="copyright">&copy;2019- <strong>Light Theme</strong></div>
+    <p class="post-meta">
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
 </div>
-<!-- Main Container Ends -->
-</body>
-</html>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
