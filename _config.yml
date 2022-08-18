@@ -1,8 +1,8 @@
 # Site settings
 title: I-KA-Z's Studio
 SEOTitle: I-KA-Z's Studio - Make fun games!
-header-img: img/post-bg-desk.jpg
-email: klovien@gmail.com
+header-img: img/background.png
+email: 2700616389@qq.com
 description: "I-KA-Z's Studio - Make fun games!"
 keyword: "人工语言, 国际语, 世界语, 三叶草国际语, 三叶语"
 url: "https://klovien.github.io"          # your host, for absolute URL
@@ -65,8 +65,8 @@ gitalk:
   clientID: d18b343dd9c7ca49518a                            #生成的clientID
   clientSecret: 539e88b8a7feffaddbb553b9c421dfefcbc6eced    #生成的clientSecret
   repo: klovien.github.io    #仓库名称
-  owner: klovien    #github用户名
-  admin: klovien
+  owner: kazepu    #github用户名
+  admin: kazepu
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
