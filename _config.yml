@@ -11,7 +11,7 @@ github_repo: "https://github.com/kazepu/kazepu.github.io" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "LMAO"
+sidebar-about-description: ""I am because You are.""
 sidebar-avatar: /img/TOU.png     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
