@@ -1,6 +1,6 @@
 # Site settings
-title: 三叶草国际语
-SEOTitle: 三叶草国际语 - 让沟通更容易
+title: I-KA-Z's Studio
+SEOTitle: I-KA-Z's Studio - Make Fun Games!
 header-img: img/background.png
 email: 2700616389@qq.com
 description: "I-KA-Z's Studio - Make fun games!"
@@ -48,7 +48,7 @@ gems: [jekyll-paginate]
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
+markdown: markdown
 highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
