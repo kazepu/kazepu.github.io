@@ -35,8 +35,8 @@ logo: logo.png
 social:
   name: Muxy
   links:
-    - https://kazepu.github.io/404
-    - https://kazepu.github.io/404
+    - https://github.com/kazepu
+    - https://github.com/kazepu
 google_site_verification: xxxxx
 lang: en
 
@@ -55,5 +55,5 @@ sass:
 # Specify the author for blog posts
 author:
   name: Muxy
-  url: https://kazepu.github.io/404
+  url: https://github.com/kazepu
   email: 2700616389@qq.com
