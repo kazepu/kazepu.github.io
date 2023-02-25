@@ -1,9 +1,9 @@
-- type: 日期
+- type: dates
   title: 日期
   url: /dates/
-- type: 类别(开发中)
-  title: 类别(开发中)
+- type: categories
+  title: 类别(咕咕中)
   url: /categories/
-- type: 标签
+- type: tags
   title: 标签
   url: /tags/
