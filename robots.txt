@@ -3,4 +3,4 @@ Disallow: /
 Allow: /$
 Allow: /posts/
 
-Sitemap: https://kazepu.github.io/sitemap-index.xml
+Sitemap: https://kazepu.pages.dev/sitemap-index.xml
